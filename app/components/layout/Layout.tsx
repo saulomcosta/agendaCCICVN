@@ -1,6 +1,6 @@
+// Layout.tsx
 import React from "react";
-import Sidebar from "./Sidebar";
-import Box from '@mui/material/Box';
+import Box from "@mui/material/Box";
 
 type Props = {
   children: React.ReactNode;
@@ -9,11 +9,12 @@ type Props = {
 const Layout = ( { children }: Props ) =>
 {
   return (
-    <div className="h-screen flex flex-row justify-start">
+    <div className="flex flex-col flex-grow bg-white">
       <Box
-        className="bg-primary flex-1"
         component="main"
-        sx={{ flexGrow: 1, p: 3, marginTop: 10 }}>
+        className="flex-grow p-6"
+        sx={{ backgroundColor: "#ffffff" }}
+      >
         {children}
       </Box>
     </div>

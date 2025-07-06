@@ -25,10 +25,13 @@ export default function RootLayout ( {
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
       </head>
-      <body className={inter.className}>
-        <Layout>
-          {children}
-        </Layout>
+      <body className="flex flex-col min-h-screen bg-white">
+        <Layout>{children}</Layout>
+
+        {/* Rodapé fixado ao fim da tela, com altura mínima preenchida */}
+        <footer className="bg-gray-100 text-gray-600 text-sm text-center  mt-auto">
+          <p>©{new Date().getFullYear()} Conselho Central Imaculada Conceição de Venda Nova</p>
+        </footer>
       </body>
     </html>
   );
