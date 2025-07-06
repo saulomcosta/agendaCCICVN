@@ -3,9 +3,8 @@
   "short_name": "Agenda",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
   "theme_color": "#1976d2",
-  "orientation": "portrait",
+  "background_color": "#ffffff",
   "icons": [
     {
       "src": "/icon-192.png",
