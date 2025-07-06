@@ -6,8 +6,8 @@ import Layout from './components/layout/Layout';
 const inter = Inter( { subsets: [ 'latin' ] } );
 
 export const metadata: Metadata = {
-  title: 'Agenda Vicentina',
-  description: 'Acompanhe os eventos da Juventude Vicentina',
+  title: 'Agenda Anual CCICVN',
+  description: 'Acompanhe os eventos do Conselho Central',
 };
 
 export default function RootLayout ( {
@@ -20,7 +20,7 @@ export default function RootLayout ( {
     <html lang="pt-BR">
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <link rel="icon" href="/icon-192.png" />
+        <link rel="icon" href="/LogoSSVP.png" />
         <meta name="theme-color" content="#1976d2" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
