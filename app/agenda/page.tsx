@@ -6,9 +6,13 @@ export default function Agenda ()
 {
   return (
     <div className="text-center space-y-4 px-4 sm:px-10 lg:px-40 mt-5">
-      <p className="text-sm text-gray-800 leading-relaxed">
-        É muito importante que os(as) presidentes compartilhem com a comunidade vicentina todos os eventos, missas (incluindo ação de graças, 5 intençõese entre outros), atividades e ações que promovam o fortalecimento do nosso Carisma Vicentino.
+      <p className="text-[15px] text-gray-800 leading-relaxed text-justify">
+        É muito importante que os(as) presidentes compartilhem com a comunidade vicentina todos os eventos, missas (incluindo ação de graça, intenções e outros eventos), atividades e ações que promovam o fortalecimento do nosso Carisma Vicentino.
+      </p>
+      <p className="text-[15px] text-gray-800 leading-relaxed mt-4 text-justify">
         Especialmente as atividades das Obras Unidas devem ser divulgadas, para que a comunidade possa participar ativamente e de perto desse serviço maravilhoso.
+      </p>
+      <p className="text-[15px] text-gray-800 leading-relaxed mt-4 text-justify">
         Compartilhar não apenas os eventos, mas também a agenda com os(as) confrades e consócias das Conferências é essencial para que acompanhem a vida e o trabalho do Conselho Central com maior envolvimento.
       </p>
 

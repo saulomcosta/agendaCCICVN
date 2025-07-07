@@ -13,7 +13,7 @@ export default function HomePage ()
       alignItems="center"
       minHeight="80vh"
       gap={3}
-      mb={3} // margem inferior de 3 unidades do MUI (~24px)
+      mb={3}
       mt={3}
     >
       <Image
@@ -25,8 +25,15 @@ export default function HomePage ()
         priority
       />
 
-      <Box maxWidth={600} textAlign="center">
-        <Typography variant="body1" color="text.secondary">
+      <Box maxWidth={600}>
+        <Typography
+          variant="body1"
+          color="text.secondary"
+          sx={{
+            fontSize: 14,
+            textAlign: 'justify', // texto justificado
+          }}
+        >
           O <strong>Conselho Central Imaculada Conceição de Venda Nova</strong> da SSVP coordena e
           apoia os Conselhos Particulares da sua área de atuação, promovendo a unidade, formação e
           suporte às Conferências Vicentinas. Essas, por sua vez, são responsáveis pelo contato

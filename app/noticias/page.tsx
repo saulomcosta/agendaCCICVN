@@ -8,7 +8,6 @@ type Noticia = {
   link?: string;
 };
 
-
 const noticias: Noticia[] = [
   {
     descricao: 'Siga nosso Instagram:',
@@ -28,13 +27,15 @@ export default function Noticias ()
 {
   return (
     <div>
-      <h2 className="text-lg font-semibold mt-3 mb-4 text-center">📣 Principais Notícias CCICVN</h2>
+      <h2 className="text-lg font-semibold mt-3 mb-4 text-center">
+        📣 Principais Notícias CCICVN
+      </h2>
       <div className="flex flex-wrap gap-4 justify-center">
         {noticias.map( ( item, index ) => (
           <div
             key={index}
             className={`${ noticias.length === 1 ? 'w-full' : 'w-full sm:w-[48%] lg:w-[30%]'
-              } border border-gray-300 rounded-md p-4 bg-white shadow-sm text-[10px] text-gray-800`}
+              } border border-gray-300 rounded-md p-4 bg-white shadow-sm text-[14px] text-gray-800`}
           >
             <p className="font-semibold mb-1">{item.descricao}</p>
 
