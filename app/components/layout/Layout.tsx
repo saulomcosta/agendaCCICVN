@@ -22,6 +22,8 @@ import Image from 'next/image';
 const navLinks = [
   { href: '/', label: 'Início' },
   { href: '/agenda', label: 'Agenda' },
+  { href: '/particulares', label: 'Particulares' },
+  { href: '/obras', label: 'Obras Unidas' },
   { href: '/aniversariantes', label: 'Aniversariantes' },
   { href: '/noticias', label: 'Notícias' },
   { href: '/arquivos', label: 'Arquivos' },

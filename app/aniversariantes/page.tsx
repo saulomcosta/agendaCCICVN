@@ -9,17 +9,17 @@ type Aniversariante = {
 
 const aniversariantes: Aniversariante[] = [
   {
-    dia: '13',
+    dia: '13/07',
     nome: 'Conferência Nossa Senhora Rainha dos Profetas',
     cp: 'CPSJE',
   },
   {
-    dia: '16',
+    dia: '16/07',
     nome: 'Conferência Santa Edwiges',
     cp: 'CPNSA',
   },
   {
-    dia: '18',
+    dia: '18/07',
     nome: 'Conferência Nossa Senhora de Fátima',
     cp: 'CPNSF',
   },

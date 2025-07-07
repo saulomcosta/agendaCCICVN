@@ -39,15 +39,19 @@ export default function Noticias ()
           >
             <p className="font-semibold mb-1">{item.descricao}</p>
 
-            {item.data && (
+            {( item.data || item.hora ) && (
               <p>
-                <span className="font-semibold">Data:</span> {item.data}
-              </p>
-            )}
-
-            {item.hora && (
-              <p>
-                <span className="font-semibold">Hora:</span> {item.hora}
+                {item.data && (
+                  <>
+                    <span className="font-semibold">Data:</span> {item.data}
+                  </>
+                )}
+                {item.data && item.hora && <span className="mx-2.5" />} {/* espaço de 10px */}
+                {item.hora && (
+                  <>
+                    <span className="font-semibold">Hora:</span> {item.hora}
+                  </>
+                )}
               </p>
             )}
 

@@ -8,10 +8,8 @@ type Arquivo = {
   url: string;
 };
 
-// Lista de arquivos
 const arquivos: Arquivo[] = [
-  // Exemplo (adicione seus arquivos aqui):
-  // { nome: 'Estatuto 2025', url: '/arquivos/estatuto.pdf' },
+  { nome: 'Regra SSVP 2023', url: '/regra/regra-ssvp-2023.pdf' },
 ];
 
 export default function ArquivosPage ()
