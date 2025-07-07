@@ -35,7 +35,8 @@ const conselhos: Conselho[] = [
   },
   {
     nome: 'Conselho Particular São João Evangelista',
-    endereco: 'Rua ...',
+    endereco: 'R. dos Maçaricos, 26 - Vila Cloris, Belo Horizonte - MG, 31744-134',
+    descricao: '**  As reuniões ocorrem todo quarto domingo do mês, nas dependências da Comunidade Nossa Senhora do Perpétuo Socorro.'
   },
 ];
 
