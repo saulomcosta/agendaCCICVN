@@ -6,14 +6,8 @@ type Noticia = {
   link: string;
 };
 
-const noticias: Noticia[] = [];
 
-const noticias2: Noticia[] = [
-  {
-    texto: 'Siga nosso Instagram:',
-    usuario: '@ssvp.ccicvn',
-    link: 'https://www.instagram.com/ssvp.ccicvn/',
-  },
+const noticias: Noticia[] = [
   {
     texto: 'Siga nosso Instagram:',
     usuario: '@ssvp.ccicvn',
