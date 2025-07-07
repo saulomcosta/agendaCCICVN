@@ -1,84 +1,39 @@
 'use client';
 
-import React from 'react';
 import Image from 'next/image';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 
-export default function Home ()
+export default function HomePage ()
 {
-  // Lista fixa de aniversariantes
-  const aniversariantes = [
-    ''
-  ];
-
-  // Lista fixa de notícias
-  const noticias = [
-    {
-      texto: 'Siga nosso Instagram:',
-      usuario: '@ssvp.ccicvn',
-      link: 'https://www.instagram.com/ssvp.ccicvn/',
-    },
-  ];
-
-
   return (
-    <main className="flex flex-col items-center justify-start p-4 w-full max-w-screen-lg mx-auto overflow-hidden">
-      {/* Banner */}
-      <div className="mb-8">
-        <Image
-          src="/banner-cc-obras.png"
-          alt="Banner CC e Obras"
-          width={400}
-          height={100}
-          style={{ objectFit: 'cover' }}
-          priority
-        />
-      </div>
+    <Box
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      minHeight="80vh"
+      gap={3}
+      mb={3} // margem inferior de 3 unidades do MUI (~24px)
+      mt={3}
+    >
+      <Image
+        src="/banner-cc-obras.png"
+        alt="Banner CC e Obras"
+        width={500}
+        height={200}
+        style={{ objectFit: 'contain' }}
+        priority
+      />
 
-      {/* Link para agenda */}
-      <button
-        onClick={() =>
-          window.open(
-            'https://calendar.google.com/calendar/embed?src=c_bdca95cd4d66df928500c417e0d43b1f4989edfa72dc4a408db21e81ac825313%40group.calendar.google.com&ctz=America%2FSao_Paulo',
-            '_blank'
-          )
-        }
-        className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300 mb-6"
-      >
-        📅 Ver Agenda CCICVN
-      </button>
-
-      {/* Colunas: Aniversariantes e Notícias */}
-      <div className="flex flex-col sm:flex-row gap-8 w-full max-w-4xl justify-center">
-        {/* Aniversariantes */}
-        <div className="flex-1">
-          <h2 className="text-lg font-semibold mb-2">🎉 Aniversariantes do Mês</h2>
-          <ul className="text-sm text-gray-800 list-disc pl-5">
-            {aniversariantes.map( ( item, index ) => (
-              <li key={index} className="mb-1">{item}</li>
-            ) )}
-          </ul>
-        </div>
-
-        {/* Notícias */}
-        <div className="flex-1">
-          <h2 className="text-lg font-semibold mb-2">📣 Principais Notícias CCICVN</h2>
-          <ul className="text-sm text-gray-800 list-disc pl-5">
-            {noticias.map( ( item, index ) => (
-              <li key={index} className="mb-1">
-                {item.texto}{' '}
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline"
-                >
-                  {item.usuario}
-                </a>
-              </li>
-            ) )}
-          </ul>
-        </div>
-      </div>
-    </main>
+      <Box maxWidth={600} textAlign="center">
+        <Typography variant="body1" color="text.secondary">
+          O <strong>Conselho Central Imaculada Conceição de Venda Nova</strong> da SSVP coordena e
+          apoia os Conselhos Particulares da sua área de atuação, promovendo a unidade, formação e
+          suporte às Conferências Vicentinas. Essas, por sua vez, são responsáveis pelo contato
+          direto com as famílias assistidas, levando solidariedade, escuta fraterna e auxílio
+          material e espiritual, conforme os princípios vicentinos.
+        </Typography>
+      </Box>
+    </Box>
   );
 }
