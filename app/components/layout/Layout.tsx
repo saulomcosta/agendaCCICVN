@@ -21,10 +21,11 @@ import Image from 'next/image';
 
 const navLinks = [
   { href: '/', label: 'Início' },
+  { href: '/agenda', label: 'Agenda' },
   { href: '/aniversariantes', label: 'Aniversariantes' },
   { href: '/noticias', label: 'Notícias' },
-  { href: '/agenda', label: 'Agenda' },
-  { href: '/contato', label: 'Contato' }, // novo item
+  { href: '/arquivos', label: 'Arquivos' },
+  { href: '/contato', label: 'Contato' },
 ];
 
 export default function Layout ( { children }: { children: React.ReactNode; } )
