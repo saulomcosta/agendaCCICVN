@@ -1,17 +1,26 @@
 'use client';
 
 type Noticia = {
-  texto: string;
-  usuario: string;
-  link: string;
+  descricao: string;
+  data?: string;
+  hora?: string;
+  textoLink?: string;
+  link?: string;
 };
 
 
 const noticias: Noticia[] = [
   {
-    texto: 'Siga nosso Instagram:',
-    usuario: '@ssvp.ccicvn',
+    descricao: 'Siga nosso Instagram:',
+    textoLink: '@ssvp.ccicvn',
     link: 'https://www.instagram.com/ssvp.ccicvn/',
+  },
+  {
+    descricao: '55ª Romaria dos Vicentinos ao Santuário Nossa Senhora da Piedade',
+    data: '27/07/2025',
+    hora: '09h00',
+    textoLink: 'Faça já sua inscrição',
+    link: 'https://santuarionossasenhoradapiedade.arquidiocesebh.org.br/santuario/visitas/',
   },
 ];
 
@@ -27,15 +36,32 @@ export default function Noticias ()
             className={`${ noticias.length === 1 ? 'w-full' : 'w-full sm:w-[48%] lg:w-[30%]'
               } border border-gray-300 rounded-md p-4 bg-white shadow-sm text-[10px] text-gray-800`}
           >
-            <p>{item.texto}</p>
-            <a
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:underline break-words"
-            >
-              {item.usuario}
-            </a>
+            <p className="font-semibold mb-1">{item.descricao}</p>
+
+            {item.data && (
+              <p>
+                <span className="font-semibold">Data:</span> {item.data}
+              </p>
+            )}
+
+            {item.hora && (
+              <p>
+                <span className="font-semibold">Hora:</span> {item.hora}
+              </p>
+            )}
+
+            {item.link && item.textoLink && (
+              <p className="mt-1">
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline break-words"
+                >
+                  {item.textoLink}
+                </a>
+              </p>
+            )}
           </div>
         ) )}
       </div>
