@@ -29,7 +29,7 @@ const conselhos: Conselho[] = [
   },
   {
     nome: 'Conselho Particular Santo Antônio',
-    endereco: 'Rua ...',
+    endereco: 'R. São Vicente, 55 - Venda Nova, Belo Horizonte - MG, 31510-080',
     descricao: 'Rezemos para seu retorno'
   },
   {
