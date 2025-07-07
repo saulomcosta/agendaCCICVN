@@ -9,16 +9,6 @@ type Aniversariante = {
 
 const aniversariantes: Aniversariante[] = [
   {
-    dia: '06',
-    nome: 'Conferência Jesus Bom Pastor',
-    cp: 'CPSFJ',
-  },
-  {
-    dia: '08',
-    nome: 'Conferência Nossa Senhora de Fátima',
-    cp: 'CPNSF',
-  },
-  {
     dia: '13',
     nome: 'Conferência Nossa Senhora Rainha dos Profetas',
     cp: 'CPSJE',
@@ -29,16 +19,63 @@ const aniversariantes: Aniversariante[] = [
     cp: 'CPNSA',
   },
   {
-    dia: '17',
-    nome: 'Conferência Mártir São João Batista',
-    cp: 'CPNSA',
+    dia: '18',
+    nome: 'Conferência Nossa Senhora de Fátima',
+    cp: 'CPNSF',
+  },
+];
+
+const aniversariantes2: Aniversariante[] = [
+  {
+    dia: '08',
+    nome: 'Conferência São João Batista',
+    cp: 'CPSJE',
   },
   {
-    dia: '22',
-    nome: 'Conferência São Miguel Arcanjo',
+    dia: '11',
+    nome: 'Conferência Santa Mônica',
+    cp: 'CPSAm',
+  },
+  {
+    dia: '15',
+    nome: 'Conferência Nossa Senhora Imaculada Conceição',
+    cp: 'CPSG',
+  },
+  {
+    dia: '17',
+    nome: 'Conferência Santa Margarida Maria Lacoque',
+    cp: 'CPSAm',
+  },
+  {
+    dia: '19',
+    nome: 'Conferência Nossa Senhora Sagrado Coração',
+    cp: 'CPSAm',
+  },
+  {
+    dia: '20',
+    nome: 'Conferência Santo Inácio',
+    cp: 'CPSJE',
+  },
+  {
+    dia: '15',
+    nome: 'Conferência Coração Eucarístico',
+    cp: 'CPSFJ',
+  },
+  {
+    dia: '25',
+    nome: 'Conferência Nossa Senhora Imaculada Conceição',
+    cp: 'CPSG',
+  },
+  {
+    dia: '28',
+    nome: 'Conselho Particular Santo Antônio',
+    cp: 'CPSA',
+  },
+  {
+    dia: '29',
+    nome: 'Conferência Sagrado Coração de Maria',
     cp: 'CPNSA',
-    desc: 'Rezemos para que volte ao seu funcionamento'
-  }
+  },
 ];
 
 export default function Aniversariantes ()
