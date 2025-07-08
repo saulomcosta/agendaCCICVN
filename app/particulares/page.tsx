@@ -10,17 +10,17 @@ const conselhos: Conselho[] = [
   {
     nome: 'Conselho Particular Nossa Senhora Aparecida',
     endereco: 'R. Cap. Sérgio Píres, 97 - São Pedro Venda Nova, Belo Horizonte - MG, 31615-640',
-    descricao: '**  '
+    descricao: '**  As reuniões ocorrem todo quarto sábado do mês, às 18h'
   },
   {
     nome: 'Conselho Particular Nossa Senhora de Fátima',
-    endereco: 'Rua ...',
-    descricao: '**  '
+    endereco: 'R. Lagoa dos Patos, 190 - Jardim LeblonBelo Horizonte - MG, 31540-390',
+    descricao: '**  As reuniões ocorrem toda última quarta-feira do mês, às 19h30, na Igreja Nossa Senhora de Fátima.'
   },
   {
     nome: 'Conselho Particular Sagrada Face de Jesus',
-    endereco: 'Rua ...',
-    descricao: '**  '
+    endereco: 'R. Maria Gertrudes Dos Santos 274 Céu Azul Belo Horizonte - MG, 31578-300',
+    descricao: '**  As reuniões ocorrem todo primeiro domingo após a reunião do Conselho Central, às 08h30, na Comunidade São José.'
   },
   {
     nome: 'Conselho Particular Santa Amélia',
