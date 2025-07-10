@@ -11,6 +11,8 @@ type Arquivo = {
 const arquivos: Arquivo[] = [
   { nome: 'Regra SSVP 2023', url: '/regra/regra-ssvp-2023.pdf' },
   { nome: 'Certificado ECAFO - Aspirante', url: '/documentos/Certificado ECAFO - Modulo Aspirante.pdf' },
+  { nome: 'Certificado ECAFO - Conferência', url: '/documentos/Certificado ECAFO - Modulo Diretoria Conferencia.pdf' },
+  { nome: 'Certificado ECAFO - Particular', url: '/documentos/Certificado ECAFO - Modulo Diretoria Conselho Particular.pdf' },
 ];
 
 export default function ArquivosPage ()
